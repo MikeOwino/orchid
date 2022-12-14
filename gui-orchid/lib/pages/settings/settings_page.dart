@@ -1,3 +1,4 @@
+import 'package:orchid/common/app_buttons_deprecated.dart';
 import 'package:orchid/orchid.dart';
 import 'dart:math';
 import 'package:flutter/material.dart';
@@ -138,7 +139,7 @@ class _SettingsPageState extends State<SettingsPage> {
               if (_tester)
                 _divided(PageTile(
                   title: "[TESTER] Reset First Launch Version",
-                  trailing: RaisedButton(
+                  trailing: RaisedButtonDeprecated(
                     color: OrchidColors.tappable,
                     child: Text(
                       s.reset.toUpperCase(),
@@ -155,7 +156,7 @@ class _SettingsPageState extends State<SettingsPage> {
               if (_tester)
                 _divided(PageTile(
                   title: "[TESTER] Clear cached accounts",
-                  trailing: RaisedButton(
+                  trailing: RaisedButtonDeprecated(
                     color: OrchidColors.tappable,
                     child: Text(
                       s.clear.toUpperCase(),
@@ -173,7 +174,7 @@ class _SettingsPageState extends State<SettingsPage> {
               if (_tester)
                 _divided(PageTile(
                   title: "[TESTER] Remove all identities (keys)",
-                  trailing: RaisedButton(
+                  trailing: RaisedButtonDeprecated(
                     color: OrchidColors.tappable,
                     child: Text(
                       s.remove.toUpperCase(),

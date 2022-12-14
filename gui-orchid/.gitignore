@@ -4,6 +4,8 @@
 /.flutter-plugins
 /.flutter-plugins-dependencies
 /in_app_purchase
+/in_app_purchase.new
+/in_app_purchase.old
 /ios/Flutter
 /ios/Runner
 /ios/.symlinks

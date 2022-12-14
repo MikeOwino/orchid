@@ -1,3 +1,4 @@
+import 'package:orchid/common/app_buttons_deprecated.dart';
 import 'package:orchid/orchid.dart';
 import 'dart:async';
 import 'package:flutter/services.dart';
@@ -149,7 +150,7 @@ class _PurchaseStatusState extends State<PurchaseStatus> {
         ),
         pady(16),
         if (_userActionRetryable)
-          FlatButton(
+          FlatButtonDeprecated(
               color: OrchidColors.purple_ff8c61e1,
               child: Text(
                 s.retry.toUpperCase(),
@@ -191,7 +192,7 @@ class _PurchaseStatusState extends State<PurchaseStatus> {
     return Column(
       children: <Widget>[
         pady(12),
-        FlatButton(
+        FlatButtonDeprecated(
           color: OrchidColors.purple_ff8c61e1,
           child: Text(s.copyDebugInfo.toUpperCase()).button,
           onPressed: _copyDebugInfo,
@@ -200,7 +201,7 @@ class _PurchaseStatusState extends State<PurchaseStatus> {
         LinkText(s.contactOrchid,
             style: OrchidText.linkStyle, url: 'https://orchid.com/contact'),
         pady(12),
-        FlatButton(
+        FlatButtonDeprecated(
             color: Colors.redAccent,
             child: Text(s.remove.toUpperCase()).button,
             onPressed: _confirmDeleteTransaction),

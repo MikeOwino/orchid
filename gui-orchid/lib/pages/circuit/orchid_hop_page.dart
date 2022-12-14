@@ -1,3 +1,4 @@
+import 'package:orchid/common/app_buttons_deprecated.dart';
 import 'package:orchid/orchid.dart';
 import 'dart:async';
 import 'package:badges/badges.dart';
@@ -243,7 +244,7 @@ class _OrchidHopPageState extends State<OrchidHopPage> {
                 child: Container(
                   //width: 60,
                   //color: Colors.red,
-                  child: FlatButton(
+                  child: FlatButtonDeprecated(
                       child: Icon(
                         Icons.chevron_right,
                         color: Colors.white,
